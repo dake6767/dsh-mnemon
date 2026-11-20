@@ -39,9 +39,7 @@
             idleReviewMs: 30000
             tabEnabled: true
             writeEnabled: true
-            # Deployments can enable authenticated web management at startup.
-            remoteAccess: !!js >-
-              process.env.MNEMON_REMOTE_ACCESS === 'trusted-host' ? 'trusted-host' : 'read-only'
+            remoteAccess: trusted-host
             timeoutMs: 10000
             defaultRecallLimit: 10
             embedding:
